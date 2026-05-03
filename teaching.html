@@ -16,8 +16,6 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/academicons.css"/>
   
-  <script src="js/jquery-2.1.3.min.js"> </script>
-  
   <style>
     .teaching-header {
       background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -83,6 +81,53 @@
       padding: 2.5rem;
       margin-bottom: 2rem;
       box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    .teaching-overview {
+      background: white;
+      border-radius: 8px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    .overview-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 1rem;
+    }
+
+    .overview-card {
+      display: block;
+      min-height: 120px;
+      padding: 1.25rem;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      background: #f8f9fa;
+      color: #333;
+      text-decoration: none;
+      transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+    }
+
+    .overview-card:hover {
+      border-color: #667eea;
+      box-shadow: 0 6px 18px rgba(102,126,234,0.16);
+      color: #333;
+      text-decoration: none;
+      transform: translateY(-2px);
+    }
+
+    .overview-card strong {
+      display: block;
+      color: #667eea;
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .overview-card span {
+      display: block;
+      font-size: 0.9rem;
+      line-height: 1.45;
     }
     
     .teaching-section h2 {
@@ -273,6 +318,14 @@
       .teaching-section {
         padding: 1.5rem;
       }
+
+      .teaching-overview {
+        padding: 1.5rem;
+      }
+
+      .overview-grid {
+        grid-template-columns: 1fr;
+      }
       
       .teaching-table {
         font-size: 0.9rem;
@@ -288,12 +341,13 @@
 <body>
   <nav class="teaching-nav">
     <div class="teaching-nav-content">
+      <a href="#overview">Overview</a>
       <a href="#philosophy">Teaching Philosophy</a>
       <a href="#assignment">Assignment 1</a>
       <a href="#assignment2">Assignment 2</a>
       <a href="#course">Dream Course</a>
       <a href="#lesson">Lesson Plan</a>
-      <a href="index.html">← Back to Home</a>
+      <a href="index.html">&larr; Back to Home</a>
     </div>
   </nav>
 
@@ -305,6 +359,26 @@
 
   <div class="page-content">
     <div class="wrapper">
+      <section id="overview" class="teaching-overview" aria-label="Teaching portfolio overview">
+        <div class="overview-grid">
+          <a class="overview-card" href="#philosophy">
+            <strong>Teaching Philosophy</strong>
+            <span>Inclusive, active, and ethics-centered learning for data-driven infrastructure education.</span>
+          </a>
+          <a class="overview-card" href="#assignment">
+            <strong>Innovation Assignment</strong>
+            <span>Hazard response analysis using maps, modeling, and student-centered reflection.</span>
+          </a>
+          <a class="overview-card" href="#course">
+            <strong>Dream Course</strong>
+            <span>A data-driven disaster resilience course with authentic community-scale problems.</span>
+          </a>
+          <a class="overview-card" href="#lesson">
+            <strong>Lesson Plan</strong>
+            <span>A focused session plan for accessibility analysis and disruption impacts.</span>
+          </a>
+        </div>
+      </section>
       
       <!-- Section 1: Teaching Philosophy -->
       <section id="philosophy" class="teaching-section">
@@ -948,29 +1022,29 @@
         </div>
 
         <div class="footer-col footer-col-2">
-          <a href="https://scholar.google.com/citations?hl=en&user=eqttEV4AAAAJ&inst=1381320739207392350" target="_blank" class="icon-button github">
+          <a href="https://scholar.google.com/citations?hl=en&user=eqttEV4AAAAJ&inst=1381320739207392350" target="_blank" rel="noopener noreferrer" class="icon-button github">
             <i class="ai ai-google-scholar-square icon-github"></i>
             <span></span>
           </a>
 
-          <a href="https://github.com/yirong-ding" target="_blank" class="icon-button github">
+          <a href="https://github.com/yirong-ding" target="_blank" rel="noopener noreferrer" class="icon-button github">
             <i class="fa fa-github icon-github"></i>
             <span></span>
           </a>
 
-          <a href="https://www.linkedin.com/in/yirong-ding-b6559a130" target="_blank" class="icon-button linkedin">
+          <a href="https://www.linkedin.com/in/yirong-ding-b6559a130" target="_blank" rel="noopener noreferrer" class="icon-button linkedin">
             <i class="fa fa-linkedin icon-linkedin"></i>
             <span></span>
           </a>
          
-          <a href="work/CV_Yirong_Ding.pdf" target="_blank" class="icon-button github">
+          <a href="work/CV_Yirong_Ding.pdf" target="_blank" rel="noopener noreferrer" class="icon-button github">
             <i class="ai ai-cv icon-github"></i>
             <span></span>
           </a>
         </div>
 
         <div class="footer-col footer-col-3">
-          <p class="text">Teaching Portfolio - Yirong Ding<br>Last updated: Nov, 2025.</p>
+          <p class="text">Teaching Portfolio - Yirong Ding<br>Last updated: May, 2026.</p>
         </div>
       </div>
     </div>
@@ -979,21 +1053,23 @@
   <div class="back-to-top">Top</div>
 
   <script type="text/javascript">
-    jQuery(document).ready(function() {
-      var offset = 220;
-      var duration = 500;
-      jQuery(window).scroll(function() {
-        if (jQuery(this).scrollTop() > offset) {
-          jQuery('.back-to-top').fadeIn(duration);
-        } else {
-          jQuery('.back-to-top').fadeOut(duration);
-        }
-      });
-      jQuery('.back-to-top').click(function(event) {
+    document.addEventListener('DOMContentLoaded', function() {
+      const backToTop = document.querySelector('.back-to-top');
+      const offset = 220;
+
+      if (!backToTop) return;
+
+      const updateBackToTop = function() {
+        backToTop.style.display = window.scrollY > offset ? 'block' : 'none';
+      };
+
+      window.addEventListener('scroll', updateBackToTop, { passive: true });
+      updateBackToTop();
+
+      backToTop.addEventListener('click', function(event) {
         event.preventDefault();
-        jQuery('html, body').animate({scrollTop: 0}, duration);
-        return false;
-      })
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
     });
   </script>
 </body>

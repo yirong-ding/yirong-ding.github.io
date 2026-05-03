@@ -224,7 +224,10 @@ pre>code {
 } */
 
 .site-nav .menu-icon {
-    display: none
+    display: none;
+    background: transparent;
+    border: 0;
+    cursor: pointer
 }
 
 .site-nav .page-link {
@@ -240,6 +243,7 @@ pre>code {
 @media screen and (max-width: 600px) {
     .site-nav {
         position: absolute;
+        display: block;
         top: 9px;
         right: 30px;
         background-color: #f9f9f9;
@@ -272,7 +276,7 @@ pre>code {
         display: none
     }
 
-    .site-nav:hover .trigger {
+    .site-nav.is-open .trigger {
         display: block;
         padding-bottom: 5px
     }
@@ -280,6 +284,7 @@ pre>code {
     .site-nav .page-link {
         font-weight: 400;
         display: block;
+        margin-left: 0 !important;
         padding: 5px 10px
     }
 }

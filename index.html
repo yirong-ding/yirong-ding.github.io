@@ -41,10 +41,8 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 
 
-  <script src="js/jquery-2.1.3.min.js"> </script>
-
   <!--[if lt IE 9]>
-<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
 </script>
 <![endif]-->
 
@@ -114,20 +112,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <div class="wrapper">
 <nav class="site-nav">
-  <a href="#" class="menu-icon">
+  <button class="menu-icon" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="Toggle navigation">
     <svg viewBox="0 0 18 15">
       <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
       <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
       <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
     </svg>
-  </a>
+  </button>
 
-  <div class="trigger">
+  <div class="trigger" id="site-menu">
     <a class="page-link" href="#bio"><b>Biography</b></a>
     <a class="page-link" href="#timeline"><b>Experiences</b></a>
     <a class="page-link" href="#publications"><b>Publications</b></a>
     <a class="page-link" href="#presentations"><b>Presentations</b></a>
-    <a class="page-link" href="#codebase"><b>GitHub</b></a>
     <a class="page-link" href="#awards"><b>Honors & Awards</b></a>
     <a class="page-link" href="#academicservices"><b>Academic Services </b></a>
     <a class="page-link" href="teaching.html"><b>Teaching</b></a>
@@ -141,7 +138,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div id="profile-cover" class="cover shallow-bg img-responsive"> 
     <div id="profile-namecard" class="profile-wrapper wrapper-light">
       <div id="my-pic" class="profile-col profile-col-1">
-        <img id="profile-avatar" src="images/myself.jpg" alt="Me" class="circle-img border-dark"-/>
+        <img id="profile-avatar" src="images/myself.jpg" alt="Yirong Ding portrait" class="circle-img border-dark" />
       </div>
       <div id="my-contact" class="profile-col profile-col-2">
         <div id="my-name" class="text-grey-dark">
@@ -156,27 +153,27 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 	</div>
         <div class="social-media">
-          <a href="https://scholar.google.com/citations?hl=en&user=eqttEV4AAAAJ&inst=1381320739207392350" target="_blank" class="icon-button linkedin">
+          <a href="https://scholar.google.com/citations?hl=en&user=eqttEV4AAAAJ&inst=1381320739207392350" target="_blank" rel="noopener noreferrer" class="icon-button linkedin">
           <i class="ai ai-google-scholar-square icon-linkedin"></i>
             <span></span>
           </a>
 
-          <a href="https://github.com/yirong-ding" target="_blank" class="icon-button github">
+          <a href="https://github.com/yirong-ding" target="_blank" rel="noopener noreferrer" class="icon-button github">
             <i class="fa fa-github icon-github"></i>
             <span></span>
           </a>
 
-          <a href="https://www.linkedin.com/in/yirong-ding-b6559a130" target="_blank" class="icon-button linkedin">
+          <a href="https://www.linkedin.com/in/yirong-ding-b6559a130" target="_blank" rel="noopener noreferrer" class="icon-button linkedin">
             <i class="fa fa-linkedin icon-linkedin"></i>
             <span></span>
           </a>
          
-          <a href="work/Resume_Yirong_Ding.pdf" target="_blank" class="icon-button github">
+          <a href="work/Resume_Yirong_Ding.pdf" target="_blank" rel="noopener noreferrer" class="icon-button github">
             <i class="ai ai-cv icon-github"></i>
             <span></span>
           </a>
 
-          <a href="/cdn-cgi/l/email-protection#cbb2a2b9a4a5acafa2a5ac8bbdbfe5aeafbe" target="_blank" class="icon-button linkedin">
+          <a href="mailto:yirongding@vt.edu" class="icon-button linkedin">
             <i class="fa fa-envelope icon-linkedin"></i>
             <span></span>
           </a>
@@ -244,13 +241,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </h1>
   <div class="bio-body" style="overflow:hidden;">
     <p>
-      I am a PhD student in <a href="https://mlsoc.vt.edu/" target="_blank">Myers-Lawson School of Construction</a> at <a href="https://www.vt.edu/" target="_blank">Virginia Tech</a>, where I focus on disaster resilience and urban computing. My advisor is <a href="https://mlsoc.vt.edu/about/faculty-and-staff/lu-zhang.html" target="_blank">Dr. Lu Zhang</a>. I am also pursuing a simultaneous Master of Engineering degree in Computer Science, which solidifies my technical foundations and provides new perspectives on interdisciplinary research.
+      I am a PhD student in <a href="https://mlsoc.vt.edu/" target="_blank" rel="noopener noreferrer">Myers-Lawson School of Construction</a> at <a href="https://www.vt.edu/" target="_blank" rel="noopener noreferrer">Virginia Tech</a>, where I focus on disaster resilience and urban computing. My advisor is <a href="https://mlsoc.vt.edu/about/faculty-and-staff/lu-zhang.html" target="_blank" rel="noopener noreferrer">Dr. Lu Zhang</a>. I am also pursuing a simultaneous Master of Engineering degree in Computer Science, which solidifies my technical foundations and provides new perspectives on interdisciplinary research.
       <br><br>
       My research centers on understanding and improving community resilience through computational approaches. I develop geospatial machine learning models to analyze infrastructure service disparities during disasters, with projects examining public service inequality, flood hazard mapping, and accessibility impacts from extreme weather events. My work combines explainable AI, knowledge graphs, and spatiotemporal analysis to provide actionable insights for equitable disaster response and policy-making. Recent outputs include publications on infrastructure service dynamics during hurricanes and context-sensitive analysis of disaster resilience and equity.
       <br><br>
-      I received my master's degree from <a href="https://www.ust.hk" target="_blank">The Hong Kong University of Science and Technology</a>, where I worked on an indoor occupancy detection project with <a href="https://walterzwang.github.io/" target="_blank">Dr. Zhe Wang</a>.
+      I received my master's degree from <a href="https://www.ust.hk" target="_blank" rel="noopener noreferrer">The Hong Kong University of Science and Technology</a>, where I worked on an indoor occupancy detection project with <a href="https://walterzwang.github.io/" target="_blank" rel="noopener noreferrer">Dr. Zhe Wang</a>.
       <br><br>
-      I'm always looking for related collaboration. If you are interested to chat with me, feel free to drop me an <a href="/cdn-cgi/l/email-protection#f48d9d869b9a93909d9a93b48280da919081" target="_blank">email</a>.
+      I'm always looking for related collaboration. If you are interested to chat with me, feel free to drop me an <a href="mailto:yirongding@vt.edu">email</a>.
 
       <br>
     </p>
@@ -287,17 +284,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <ul>
           <li>Ph.D in Environmental Planning and Design, Jan. 2024 - Dec. 2027</li>
           <li>M.Eng in Computer Science (Simultaneous Degree), Sep. 2024 - Dec. 2026</li>
-          <li>Advisor: <a href="https://mlsoc.vt.edu/about/faculty-and-staff/lu-zhang.html" target="_blank">Dr. Lu Zhang</a></li>
+          <li>Advisor: <a href="https://mlsoc.vt.edu/about/faculty-and-staff/lu-zhang.html" target="_blank" rel="noopener noreferrer">Dr. Lu Zhang</a></li>
           <li>Committee Members:
-            <a href="https://spia.vt.edu/people/Faculty/zhangy.html" target="_blank">Dr. Yang Zhang</a>,
-            <a href="https://www.junghwankim.org/" target="_blank">Dr. Junghwan Kim</a>,
-            <a href="https://sites.google.com/view/dawei-zhou/home" target="_blank">Dr. Dawei Zhou</a>
+            <a href="https://spia.vt.edu/people/Faculty/zhangy.html" target="_blank" rel="noopener noreferrer">Dr. Yang Zhang</a>,
+            <a href="https://www.junghwankim.org/" target="_blank" rel="noopener noreferrer">Dr. Junghwan Kim</a>,
+            <a href="https://sites.google.com/view/dawei-zhou/home" target="_blank" rel="noopener noreferrer">Dr. Dawei Zhou</a>
           </li>
         </ul>
         <b>The Hong Kong University of Science and Technology</b><br>
           <ul>
             <li>M.Sc in Civil Infrastructural Engineering and Management, Jan. 2023 - Dec. 2023</li>
-            <li>Advisor: <a href="https://walterzwang.github.io/" target="_blank">Dr. Zhe (Walter) Wang</a></li>
+            <li>Advisor: <a href="https://walterzwang.github.io/" target="_blank" rel="noopener noreferrer">Dr. Zhe (Walter) Wang</a></li>
           </ul>
         <b>Chongqing University</b><br>
         <ul>
@@ -407,22 +404,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <!-- VT -->
       <div class="timeline-item">
         <div class="timeline-date">
-          <img class="social-icon" src="images/vt.jpg"/>
+          <img class="social-icon" src="images/vt.jpg" alt="Virginia Tech logo" loading="lazy"/>
           Jan, 2024 - Now
         </div>
         <div class="timeline-title">
-          GRA/GTA @ <a href="https://mlsoc.vt.edu/" target="_blank">Myers-Lawson School of Construction</a>
+          GRA/GTA @ <a href="https://mlsoc.vt.edu/" target="_blank" rel="noopener noreferrer">Myers-Lawson School of Construction</a>
         </div>
       </div>
 
       <!-- Yunnan Design -->
       <div class="timeline-item">
         <div class="timeline-date">
-          <img class="social-icon" src="images/yunnan-design.jpg"/>
+          <img class="social-icon" src="images/yunnan-design.jpg" alt="Yunnan Design Institute logo" loading="lazy"/>
           Apr, 2017 - Jan, 2023
         </div>
         <div class="timeline-title">
-          Structure Design Engineer / Design Supervisor / Design Representative @ <a href="https://www.ydi.cn/list/cnEN/23/85/auto/12/0.html" target="_blank">Architecture Design & Research Inst. III, Yunnan Design Institute Group Co., Ltd.</a>
+          Structure Design Engineer / Design Supervisor / Design Representative @ <a href="https://www.ydi.cn/list/cnEN/23/85/auto/12/0.html" target="_blank" rel="noopener noreferrer">Architecture Design & Research Inst. III, Yunnan Design Institute Group Co., Ltd.</a>
         </div>
         <div class="timeline-desc">
           <div class="timeline-host">
@@ -441,11 +438,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <!-- Hangxiao Steel -->
       <div class="timeline-item">
         <div class="timeline-date">
-          <img class="social-icon" src="images/hangxiao-steel.jpg"/>
+          <img class="social-icon" src="images/hangxiao-steel.jpg" alt="Hangxiao Steel Structure logo" loading="lazy"/>
           Jul, 2016 - Mar, 2017
         </div>
         <div class="timeline-title">
-          Steel Structure Engineer & BIM Engineer @ <a href="https://www.hxss.com.cn/en/" target="_blank">Hangxiao Steel Structure Co., Ltd.</a>
+          Steel Structure Engineer & BIM Engineer @ <a href="https://www.hxss.com.cn/en/" target="_blank" rel="noopener noreferrer">Hangxiao Steel Structure Co., Ltd.</a>
         </div>
         <div class="timeline-desc">
           <div class="timeline-host">
@@ -463,11 +460,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <!-- CREEC -->
       <div class="timeline-item">
         <div class="timeline-date">
-          <img class="social-icon" src="images/creec-kunming.jpg"/>
+          <img class="social-icon" src="images/creec-kunming.jpg" alt="CREEC Kunming logo" loading="lazy"/>
           Jan, 2015 - Feb, 2015
         </div>
         <div class="timeline-title">
-          Structure Design Intern @ <a href="https://www.crecg.com/zgztywz/about_us/organization/subsidiaries_of_crec/index.html" target="_blank">Kunming Survey, Design and Research Institute Co., Ltd. Of CREEC</a>
+          Structure Design Intern @ <a href="https://www.crecg.com/zgztywz/about_us/organization/subsidiaries_of_crec/index.html" target="_blank" rel="noopener noreferrer">Kunming Survey, Design and Research Institute Co., Ltd. Of CREEC</a>
         </div>
         <div class="timeline-desc">
           <div class="timeline-host">
@@ -503,7 +500,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <div class="pub" data-selected="true">
       <div class="pub-left">
-        <img class="intro-img frame" src="images/infrastructure-inequality.jpg">
+        <img class="intro-img frame" src="images/infrastructure-inequality.jpg" alt="Infrastructure service inequality research graphic" loading="lazy">
       </div>
       <div class="pub-right">
         <div class="title">
@@ -519,14 +516,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <span class="place"></span>
         </div>
         <div class="tags">
-          [<a class="tag" href="https://ascelibrary.org/doi/abs/10.1061/NHREFO.NHENG-2507" target="_blank">Paper</a>]
+          [<a class="tag" href="https://ascelibrary.org/doi/abs/10.1061/NHREFO.NHENG-2507" target="_blank" rel="noopener noreferrer">Paper</a>]
         </div>
       </div>
     </div>
 
     <div class="pub" data-selected="true">
       <div class="pub-left">
-        <img class="intro-img frame" src="images/equity-resilience.jpg">
+        <img class="intro-img frame" src="images/equity-resilience.jpg" alt="Disaster resilience and equity research graphic" loading="lazy">
       </div>
       <div class="pub-right">
         <div class="title">
@@ -542,14 +539,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <span class="place"></span>
         </div>
         <div class="tags">
-          [<a class="tag" href="https://doi.org/10.1016/j.scs.2026.107203" target="_blank">Paper</a>]
+          [<a class="tag" href="https://doi.org/10.1016/j.scs.2026.107203" target="_blank" rel="noopener noreferrer">Paper</a>]
         </div>
       </div>
     </div>
 
     <div class="pub" data-selected="false">
       <div class="pub-left">
-        <img class="intro-img frame" src="images/flood-hazard-maps.jpg">
+        <img class="intro-img frame" src="images/flood-hazard-maps.jpg" alt="Flood hazard maps research graphic" loading="lazy">
       </div>
       <div class="pub-right">
         <div class="title">
@@ -571,7 +568,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <div class="pub" data-selected="false">
       <div class="pub-left">
-        <img class="intro-img frame" src="images/fema-fsf.jpg">
+        <img class="intro-img frame" src="images/fema-fsf.jpg" alt="FEMA and FSF flood hazard delineation comparison graphic" loading="lazy">
       </div>
       <div class="pub-right">
         <div class="title">
@@ -595,7 +592,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <div class="pub" data-selected="false">
       <div class="pub-left">
-        <img class="intro-img frame" src="images/conf-equity-resilience.jpg">
+        <img class="intro-img frame" src="images/conf-equity-resilience.jpg" alt="Conference paper graphic on resilience and equity" loading="lazy">
       </div>
       <div class="pub-right">
         <div class="title">
@@ -617,7 +614,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <div class="pub" data-selected="false">
       <div class="pub-left">
-        <img class="intro-img frame" src="images/knowledge-graph.jpg">
+        <img class="intro-img frame" src="images/knowledge-graph.jpg" alt="Dynamic knowledge graph research graphic" loading="lazy">
       </div>
       <div class="pub-right">
         <div class="title">
@@ -639,7 +636,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <div class="pub" data-selected="false">
       <div class="pub-left">
-        <img class="intro-img frame" src="images/helene-accessibility.jpg">
+        <img class="intro-img frame" src="images/helene-accessibility.jpg" alt="Hurricane Helene accessibility research graphic" loading="lazy">
       </div>
       <div class="pub-right">
         <div class="title">
@@ -661,7 +658,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <div class="pub" data-selected="false">
       <div class="pub-left">
-        <img class="intro-img frame" src="images/solid-waste-irma.jpg">
+        <img class="intro-img frame" src="images/solid-waste-irma.jpg" alt="Solid waste service requests during Hurricane Irma research graphic" loading="lazy">
       </div>
       <div class="pub-right">
         <div class="title">
@@ -677,7 +674,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <span class="place"></span>
         </div>
         <div class="tags">
-          [<a class="tag" href="https://doi.org/10.1061/9780784486443.038" target="_blank">Paper</a>]
+          [<a class="tag" href="https://doi.org/10.1061/9780784486443.038" target="_blank" rel="noopener noreferrer">Paper</a>]
         </div>
       </div>
     </div>
@@ -687,11 +684,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </div>
 	
 <!-- JavaScript to handle button clicks -->
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
   // Get the buttons and publications
   const showSelectedBtn = document.getElementById('show-selected-btn');
   const showAllBtn = document.getElementById('show-all-btn');
-  const publications = document.querySelectorAll('.pub');
+  const publications = document.querySelectorAll('#publications .pub');
 
   // Add event listener to 'Show Selected Publication' button
   showSelectedBtn.addEventListener('click', function() {
@@ -719,6 +716,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   async function loadGitHubStats() {
     for (const { owner, repo, starId, forkId } of repos) {
+      const starEl = document.getElementById(starId);
+      const forkEl = document.getElementById(forkId);
+      if (!starEl || !forkEl) continue;
+
       try {
         const res = await fetch(`https://api.github.com/repos/${owner}/${repo}`);
         if (!res.ok) throw new Error("GitHub API error");
@@ -746,7 +747,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <div class="pub" data-selected="false">
         <div class="pub-left">
-          <img class="intro-img frame" src="images/presentation-fsf-fema.jpg">
+          <img class="intro-img frame" src="images/presentation-fsf-fema.jpg" alt="Presentation photo for FEMA and FSF flood hazard delineations" loading="lazy">
         </div>
         <div class="pub-right">
           <div class="title">
@@ -762,14 +763,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <span class="place"></span>
           </div>
           <div class="tags">
-            [<a class="tag" href="https://www.nationalacademies.org/units/NRCEO-CCX-23-01/event/46179" target="_blank">Video</a>]
+            [<a class="tag" href="https://www.nationalacademies.org/units/NRCEO-CCX-23-01/event/46179" target="_blank" rel="noopener noreferrer">Video</a>]
           </div>
         </div>
       </div>
 
     <div class="pub" data-selected="false">
         <div class="pub-left">
-          <img class="intro-img frame" src="images/presentation-crc2026-equity-resilience.jpg">
+          <img class="intro-img frame" src="images/presentation-crc2026-equity-resilience.jpg" alt="CI and CRC conference presentation photo" loading="lazy">
         </div>
         <div class="pub-right">
           <div class="title">
@@ -792,7 +793,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="pub-list">
       <div class="pub" data-selected="false">
         <div class="pub-left">
-          <img class="intro-img frame" src="images/presentation-flood-maps.jpg">
+          <img class="intro-img frame" src="images/presentation-flood-maps.jpg" alt="Natural Hazards Workshop flood policy presentation graphic" loading="lazy">
         </div>
         <div class="pub-right">
           <div class="title">
@@ -808,14 +809,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <span class="place"></span>
           </div>
           <div class="tags">
-            [<a class="tag" href="https://hazards.colorado.edu/workshop/2025/abstract/researchers-meeting#flood-hazard-maps-for-local-flood-policies-barriers-and-opportunities" target="_blank">Abstract</a>]
+            [<a class="tag" href="https://hazards.colorado.edu/workshop/2025/abstract/researchers-meeting#flood-hazard-maps-for-local-flood-policies-barriers-and-opportunities" target="_blank" rel="noopener noreferrer">Abstract</a>]
           </div>
         </div>
       </div>
 
       <div class="pub" data-selected="false">
         <div class="pub-left">
-          <img class="intro-img frame" src="images/presentation-solid-waste-irma.jpg">
+          <img class="intro-img frame" src="images/presentation-solid-waste-irma.jpg" alt="Presentation photo for Hurricane Irma solid waste service requests" loading="lazy">
         </div>
         <div class="pub-right">
           <div class="title">
@@ -849,7 +850,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         <div class="github-card">
           <div>
-            <a class="repo-link" href="https://github.com/yirong-ding/EPE" target="_blank">
+            <a class="repo-link" href="https://github.com/yirong-ding/EPE" target="_blank" rel="noopener noreferrer">
               yirong-ding/<strong>EPE</strong>
             </a>
             <span class="label">Project</span>
@@ -860,7 +861,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div class="meta">
             <div class="dot"></div>
             <div>Python</div>
-            <a href="https://github.com/yirong-ding/EPE/stargazers" target="_blank">
+            <a href="https://github.com/yirong-ding/EPE/stargazers" target="_blank" rel="noopener noreferrer">
               <svg fill="currentColor" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
                 <path d="M908.1 353.1l-253.9-36.9L540.7 86.1c-3.1-6.3-8.2-11.4-14.5-14.5-15.8-7.8-35-1.3-42.9
                 14.5L369.8 316.2 115.9 353.1c-7 1-13.4 4.3-18.3 9.3a32.05 32.05 0 0 0 .6 45.3l183.7
@@ -871,7 +872,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               </svg>
               Star &nbsp;  <span id="star-count">–</span>
             </a>
-            <a href="https://github.com/yirong-ding/EPE/network/members" target="_blank">
+            <a href="https://github.com/yirong-ding/EPE/network/members" target="_blank" rel="noopener noreferrer">
               <svg fill="currentColor" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
                 <path d="M14 4a2 2 0 1 0-2.47 1.94V7a.48.48 0 0 1-.27.44L8.49
                 8.88l-2.76-1.4A.49.49 0 0 1 5.46 7V5.94a2 2 0 1 0-1
@@ -998,7 +999,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <div style="display: flex; justify-content: center; align-items: center;">
   <div style="max-width: 200px; width: 50%;">
-    <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=tiVI3WJiX0KLnDh8xI2Es1Fr59tHxhuo1LxCvhEbv3g"></script>
+    <script type="text/javascript" id="clstr_globe" src="https://clustrmaps.com/globe.js?d=tiVI3WJiX0KLnDh8xI2Es1Fr59tHxhuo1LxCvhEbv3g"></script>
   </div>
 </div>
 
@@ -1009,27 +1010,27 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="footer-col  footer-col-1">
         <ul class="contact-list">
           <li>Personal Email:</li>
-          <li><a href="/cdn-cgi/l/email-protection#99">yirongding [at] vt.edu</a></li>
+          <li><a href="mailto:yirongding@vt.edu">yirongding [at] vt.edu</a></li>
         </ul>
       </div>
 
       <div class="footer-col  footer-col-2">
-          <a href="https://scholar.google.com/citations?hl=en&user=eqttEV4AAAAJ&inst=1381320739207392350" target="_blank" class="icon-button github">
+          <a href="https://scholar.google.com/citations?hl=en&user=eqttEV4AAAAJ&inst=1381320739207392350" target="_blank" rel="noopener noreferrer" class="icon-button github">
           <i class="ai ai-google-scholar-square icon-github"></i>
             <span></span>
           </a>
 
-          <a href="https://github.com/yirong-ding" target="_blank" class="icon-button github">
+          <a href="https://github.com/yirong-ding" target="_blank" rel="noopener noreferrer" class="icon-button github">
             <i class="fa fa-github icon-github"></i>
             <span></span>
           </a>
 
-          <a href="https://www.linkedin.com/in/yirong-ding-b6559a130" target="_blank" class="icon-button linkedin">
+          <a href="https://www.linkedin.com/in/yirong-ding-b6559a130" target="_blank" rel="noopener noreferrer" class="icon-button linkedin">
             <i class="fa fa-linkedin icon-linkedin"></i>
             <span></span>
           </a>
          
-          <a href="work/CV_Yirong_Ding.pdf" target="_blank" class="icon-button github">
+          <a href="work/CV_Yirong_Ding.pdf" target="_blank" rel="noopener noreferrer" class="icon-button github">
             <i class="ai ai-cv icon-github"></i>
             <span></span>
           </a>
@@ -1037,7 +1038,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<div class="footer-col footer-col-3">
     	<!--<a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fwillhua127.github.io&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false"/></a> -->
 	<!-- <a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?user=Lxe71v4AAAAJ&hl=en&url=https%3A%2F%2Fscholar.google.com%2Fcitations&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false"/></a> -->
-		<p class="text">Last updated: Nov, 2025.<br>The style of this website is borrowed from <a href='https://cen-jun.com/' target="_blank">Jun Cen's</a>.</p>
+		<p class="text">Last updated: May, 2026.</p>
+    <!-- Site style adapted from Jun Cen's website. -->
 	</div>
   </div>
   </div>
@@ -1046,23 +1048,47 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="back-to-top">Top</div>
 
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript">
-jQuery(document).ready(function() {
-    var offset = 220;
-    var duration = 500;
-    jQuery(window).scroll(function() {
-        if (jQuery(this).scrollTop() > offset) {
-            jQuery('.back-to-top').fadeIn(duration);
-        } else {
-            jQuery('.back-to-top').fadeOut(duration);
-    
-        }
-    });
-    jQuery('.back-to-top').click(function(event) {
-        event.preventDefault();
-        jQuery('html, body').animate({scrollTop: 0}, duration);
-        return false;
-    })
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', function() {
+    const nav = document.querySelector('.site-nav');
+    const menuButton = document.querySelector('.menu-icon');
+    const backToTop = document.querySelector('.back-to-top');
+    const offset = 220;
+
+    if (nav && menuButton) {
+        menuButton.addEventListener('click', function() {
+            const isOpen = nav.classList.toggle('is-open');
+            menuButton.setAttribute('aria-expanded', String(isOpen));
+        });
+
+        nav.querySelectorAll('.page-link').forEach(function(link) {
+            link.addEventListener('click', function() {
+                nav.classList.remove('is-open');
+                menuButton.setAttribute('aria-expanded', 'false');
+            });
+        });
+
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                nav.classList.remove('is-open');
+                menuButton.setAttribute('aria-expanded', 'false');
+            }
+        });
+    }
+
+    if (backToTop) {
+        const updateBackToTop = function() {
+            backToTop.style.display = window.scrollY > offset ? 'block' : 'none';
+        };
+
+        window.addEventListener('scroll', updateBackToTop, { passive: true });
+        updateBackToTop();
+
+        backToTop.addEventListener('click', function(event) {
+            event.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    }
 });
 </script>
   </body>
