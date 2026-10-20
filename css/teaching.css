@@ -1,0 +1,511 @@
+/* Teaching portfolio page. Loaded after main.css and motion.css; uses the
+   same color tokens, header, light/dark theme and type sizes as the homepage. */
+
+:root {
+  --m-orange-text: #B4540A;
+}
+
+html[data-theme="dark"] {
+  --m-orange-text: #F59A3C;
+}
+
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+@media screen and (min-width: 1200px) {
+  .teaching-page .wrapper,
+  .teaching-page .site-header .wrapper {
+    max-width: 1120px;
+  }
+}
+
+/* ---------- banner ---------- */
+.teaching-header {
+  position: relative;
+  overflow: hidden;
+  margin-top: 60px;
+  padding: 56px 0 48px;
+  background: var(--m-cover);
+  border-bottom: 1px solid var(--m-line);
+  color: var(--m-fg);
+}
+
+.teaching-header .wrapper {
+  position: relative;
+  z-index: 2;
+}
+
+.teaching-kicker {
+  font: 500 13px/1.4 "JetBrains Mono", ui-monospace, Consolas, monospace;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--m-orange-text);
+}
+
+html .teaching-header h1 {
+  margin: 10px 0 10px;
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -.02em;
+  color: var(--m-fg);
+}
+
+.teaching-header p {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.5;
+  color: var(--m-muted);
+}
+
+/* ---------- cards and sections ---------- */
+.teaching-section {
+  margin-bottom: 2rem;
+  padding: 2.5rem;
+  border: 1px solid var(--m-line);
+  border-radius: 16px;
+  background: var(--m-bg2);
+  scroll-margin-top: 80px;
+}
+
+/* teaching at a glance: four key numbers from the CV */
+.teaching-glance {
+  margin-bottom: 2rem;
+}
+
+.glance-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.glance-item {
+  padding: 1.25rem 1.4rem;
+  border: 1px solid var(--m-line);
+  border-radius: 14px;
+  background: var(--m-bg2);
+}
+
+.glance-item b {
+  display: block;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -.02em;
+  background: linear-gradient(90deg, var(--m-a1), var(--m-a2));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.glance-item span {
+  display: block;
+  margin-top: 6px;
+  font-size: 15px;
+  line-height: 1.4;
+  color: var(--m-muted);
+}
+
+html .teaching-section .section-lead,
+html .teaching-section .course-line {
+  margin: -0.5rem 0 1.5rem;
+  font-size: 16px;
+  color: var(--m-muted);
+}
+
+/* teaching philosophy: four short principles, two per row */
+.principle-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+html .teaching-section .principle-grid .card h4 {
+  margin-bottom: .5rem;
+}
+
+html .teaching-section .principle-grid .card h4 .fa {
+  width: 1.2em;
+  margin-right: 4px;
+}
+
+html .teaching-section .principle-grid .card p {
+  margin: 0;
+  font-size: 15.5px;
+  line-height: 1.6;
+}
+
+@media screen and (max-width: 768px) {
+  .principle-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+/* teaching experience: one card per course */
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin-bottom: .5rem;
+}
+
+.course-card {
+  padding: 1.25rem 1.4rem;
+  border: 1px solid var(--m-line);
+  border-top: 3px solid var(--m-a1);
+  border-radius: 12px;
+  background: var(--m-bg);
+}
+
+.course-code {
+  font: 500 13px/1.4 "JetBrains Mono", ui-monospace, Consolas, monospace;
+  color: var(--m-orange-text);
+}
+
+html .teaching-section .course-card h3 {
+  margin: 4px 0 6px;
+  font-size: 19px;
+  color: var(--m-fg);
+}
+
+.course-meta {
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--m-muted);
+}
+
+html .teaching-section .course-card p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+.course-tags {
+  margin-bottom: .5rem;
+}
+
+/* sample teaching materials: summary up front, full text behind a toggle */
+.material-grid {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.material {
+  padding: 1.5rem 1.6rem;
+  border: 1px solid var(--m-line);
+  border-radius: 14px;
+  background: var(--m-bg);
+}
+
+.material-head {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 1rem;
+}
+
+.material-ico {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  font-size: 20px;
+  color: var(--m-a1);
+  background: color-mix(in srgb, var(--m-a1) 9%, transparent);
+  border: 1px solid color-mix(in srgb, var(--m-a1) 25%, transparent);
+}
+
+html .teaching-section .material h3 {
+  margin: 0;
+  font-size: 21px;
+}
+
+html .teaching-section .material-meta {
+  margin: 2px 0 0;
+  font-size: 15px;
+  color: var(--m-muted);
+}
+
+.material-tags {
+  margin: .25rem 0 .5rem;
+}
+
+.material-more {
+  margin-top: 1rem;
+  border-top: 1px solid var(--m-line);
+  padding-top: 1rem;
+}
+
+.material-more > summary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border: 1px solid color-mix(in srgb, var(--m-a1) 45%, transparent);
+  border-radius: 999px;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--m-a1);
+  cursor: pointer;
+  list-style: none;
+  transition: background-color .2s ease;
+}
+
+.material-more > summary::-webkit-details-marker {
+  display: none;
+}
+
+.material-more > summary::after {
+  content: "\f107";
+  font-family: FontAwesome;
+  transition: transform .2s ease;
+}
+
+.material-more[open] > summary::after {
+  transform: rotate(180deg);
+}
+
+.material-more > summary:hover {
+  background: color-mix(in srgb, var(--m-a1) 8%, transparent);
+}
+
+.material-body {
+  margin-top: 1rem;
+}
+
+html .teaching-section .material-split {
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px dashed var(--m-line);
+  font-size: 19px;
+  color: var(--m-a1);
+}
+
+html .teaching-section h2 {
+  position: relative;
+  margin: 0 0 1.5rem;
+  padding-bottom: 12px;
+  font-size: 28px;
+  font-weight: 500;
+  color: var(--m-fg);
+}
+
+.teaching-section h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 56px;
+  height: 3px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, var(--m-a1), var(--m-a2));
+}
+
+.teaching-section h2 .fa {
+  color: var(--m-a1);
+}
+
+html .teaching-section h3 {
+  margin: 2rem 0 1rem;
+  font-size: 22px;
+  font-weight: 500;
+  color: var(--m-a1);
+}
+
+html .teaching-section h4 {
+  margin: 1.5rem 0 .75rem;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--m-fg);
+}
+
+.teaching-section p {
+  margin-bottom: 1rem;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.teaching-section ul,
+.teaching-section ol {
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+.teaching-section li {
+  margin-bottom: .5rem;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.highlight-box {
+  margin: 1.5rem 0;
+  padding: 1.5rem;
+  border-left: 4px solid var(--m-a1);
+  border-radius: 0 12px 12px 0;
+  background: color-mix(in srgb, var(--m-a1) 6%, var(--m-bg2));
+}
+
+html .highlight-box h4 {
+  margin-top: 0;
+  color: var(--m-a1);
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.card {
+  padding: 1.5rem;
+  border: 1px solid var(--m-line);
+  border-radius: 12px;
+  background: var(--m-bg);
+}
+
+html .card h4 {
+  margin-top: 0;
+  color: var(--m-a1);
+}
+
+.badge {
+  display: inline-block;
+  margin: 0 .5rem .5rem 0;
+  padding: 5px 10px;
+  border: 1px solid color-mix(in srgb, var(--m-a1) 45%, transparent);
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--m-a1) 8%, transparent);
+  color: var(--m-a1);
+  font: 500 13px/1.3 "JetBrains Mono", ui-monospace, Consolas, monospace;
+}
+
+/* ---------- tables ---------- */
+.teaching-table,
+.course-week-table {
+  width: 100%;
+  margin: 1.5rem 0;
+  overflow-x: auto;
+}
+
+.teaching-table {
+  display: block;
+}
+
+.teaching-table table,
+.course-week-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.teaching-table th,
+.course-week-table th {
+  padding: .85rem 1rem;
+  text-align: left;
+  font-weight: 600;
+  color: var(--m-fg);
+  background: color-mix(in srgb, var(--m-a1) 12%, var(--m-bg2));
+  border: 1px solid var(--m-line);
+}
+
+.teaching-table td,
+.course-week-table td {
+  padding: .85rem 1rem;
+  border: 1px solid var(--m-line);
+  vertical-align: top;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.teaching-table tr:nth-child(even),
+.course-week-table tr:nth-child(even) {
+  background: var(--m-bg);
+}
+
+/* ---------- timelines inside sections ----------
+   main.css styles .timeline-item as a left/right alternating timeline;
+   here each item should be a plain left-aligned block on a single line. */
+.teaching-section .timeline {
+  position: relative;
+  margin: 2rem 0;
+  padding-left: 1.5rem;
+  border-left: 3px solid var(--m-a1);
+}
+
+.teaching-section .timeline-item,
+.teaching-section .timeline-item:nth-child(odd),
+.teaching-section .timeline-item:nth-child(even) {
+  position: relative;
+  width: auto;
+  margin: 0 0 1.5rem;
+  padding: 0;
+  border: 0;
+  text-align: left;
+}
+
+.teaching-section .timeline-item::before,
+.teaching-section .timeline-item::after {
+  display: none;
+}
+
+html .teaching-section .timeline-item h4 {
+  margin-top: 0;
+  color: var(--m-a1);
+}
+
+/* ---------- small screens ---------- */
+@media screen and (max-width: 768px) {
+  .teaching-header {
+    margin-top: 56px;
+    padding: 36px 0 32px;
+  }
+
+  html .teaching-header h1 {
+    font-size: 32px;
+  }
+
+  .teaching-section {
+    padding: 1.5rem;
+  }
+
+  .material {
+    padding: 1.25rem;
+  }
+
+  .course-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .teaching-table td,
+  .teaching-table th {
+    padding: .5rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .glance-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1000px) {
+  .course-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .material-more > summary,
+  .material-more > summary::after {
+    transition: none;
+  }
+}
